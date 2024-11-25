@@ -16,10 +16,9 @@
     align-items: center;
     width: 100%;
 }
-h1{
-    font-size: 2rem;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
+header img{
+    height: 3.5rem;
+    mix-blend-mode: multiply;
 }
 form{
     display: flex;
@@ -65,4 +64,49 @@ form button:hover{
     background-color: rgb(12, 97, 110);
     height: 20px;
     color: #ffffff;
+}
+
+#inicio{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+#inicio::after { 
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+#inicio img{
+    display: block;
+    width: 100%;
+}
+#produtos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding:3rem;
+}
+.roupa{
+    width: 17rem;
+    height: 22rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.roupa:hover{
+    box-shadow: 0 0 1rem rgb(74, 74, 74);
+    cursor: pointer;
+}
+.roupa img{
+    width: 17rem;
+    height: 17rem;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
 }
