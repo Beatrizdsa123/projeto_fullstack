@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Beatriz -->
     <header class="header">
         <div class="container">
             <img src="img/logo1.png" alt="imagem de um diamante azul com as palavras 'Double Diamond' ao lado">
@@ -18,9 +19,9 @@
                 <ul class="links">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#about">Sobre nós</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#carrinho">Carrinho</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,6 +29,8 @@
     <section id="inicio">
         <img src="img/inicio.webp">
     </section>
+
+    <!-- Jéssica -->
     <section>
         <div id="produtos">
             <div class="roupa">
@@ -104,5 +107,32 @@
             </div>
         </div>
      </section>
+
+     <!-- Eduarda -->
+    <section id="about" class="section">
+        <h1>Sobre Nós</h1>
+        <p>Somos a loja oficial da dupla musical "Double Diamond", aqui você irá encontrar as merchs oficiais da nova turnê.</p>
+        <p>Para mais informações sobre as primeiras datas da turnê 0203 acesse o site oficial da dupla. Lá você também encontrará informações sobre a compra dos ingressos.</p>
+    </section>
+    
+    <section id="contato" class="section">
+        <h1>Contato</h1>
+        <p>Entre em contato através do formulário abaixo:</p>
+        <form action="https://formsubmit.co/bookcoffee.dd@gmail.com" method="POST" class="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
