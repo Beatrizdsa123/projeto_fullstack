@@ -10,6 +10,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    overflow-x: auto;
+    scrollbar-width: thin;
 }
 .container{
     display: flex;
@@ -112,6 +114,47 @@ form button:hover{
     height: 17rem;
     border-radius: 2rem;
     margin-bottom: 0.5rem;
+}
+@media (max-width: 1200px){
+    #produtos { grid-template-columns: repeat(3, 1fr);} 
+} 
+@media (max-width: 900px){
+    #produtos { grid-template-columns: repeat(2, 1fr);} 
+} 
+@media (max-width: 600px){
+    #produtos { grid-template-columns: 1fr;}
+}
+.a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(122, 229, 233);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.a ul{
+    list-style-type: none;
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b ul{
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.copyrigth{
+    text-align: center;
+    font-size: small;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn{
+    cursor: pointer;
 }
 
 /* Eduarda */
@@ -216,6 +259,8 @@ main{
 }
 .content{
     display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
 }
 section{
     flex: 1;
